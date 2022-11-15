@@ -197,6 +197,9 @@ body .subMenu {
   padding: 10px;
   background: linear-gradient(180deg, rgb(175, 89, 35), rgb(241, 231, 166));
 }
+body .subMenu .row {
+  margin: auto;
+}
 body .subMenu .row .tarjetaConceptos {
   width: 150px;
   height: 50px;
@@ -276,7 +279,7 @@ body .mainCompositor .sectionCompositor .articleAnalisis {
   justify-content: space-around;
   background-color: #DDE8B9;
   height: auto;
-  margin: 0px auto;
+  margin: auto;
   border: 1px solid black;
 }
 @media (min-width: 768px) {
@@ -321,11 +324,11 @@ body .mainCompositor .sectionCompositor .containerCompositor .compositor p {
   padding: 20px;
 }
 body .mainCompositor .sectionCompositor .containerCompositor .compositor .table {
-  margin: 20px;
+  margin: auto;
 }
 body .mainCompositor .sectionCompositor .containerCompositor .compositor .videoObra {
   padding: 20px;
-  margin-left: 10px;
+  margin: auto;
   width: auto;
   height: 500px;
 }

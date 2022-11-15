@@ -23,6 +23,7 @@ body {
 		padding: 10px;
 		background: linear-gradient(180deg, rgb(175, 89, 35), rgb(241, 231, 166));
 		.row{
+			margin: auto;
 			.tarjetaConceptos {
 				@include tamano ( 150px, 50px);
 				margin: 10px;
