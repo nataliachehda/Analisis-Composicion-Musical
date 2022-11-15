@@ -1,0 +1,112 @@
+$color_1: black;
+$color_2: antiquewhite;
+
+*{ 
+	font-family: 'Texturina', serif;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+		background: #F3904F;
+		background: -webkit-linear-gradient(to bottom, #3B4371, #F3904F);
+		background: linear-gradient(to bottom, #3B4371, #F3904F);
+		header{
+		.navFondo {
+			background-image: url(../images/fondomusica.jpg);
+			background-size: cover;
+			.container-fluid{
+				.navbar-brand {
+					img {
+						border-radius: 50px;
+					}
+				}
+			}
+			.container-fluid {
+				.collapse{
+					.navbar-nav{
+						.nav-item{
+							.nav-link {
+								color: $color_1;
+							}
+						}
+					}
+				}
+			}		
+		}
+		.container-fluid {
+			.barraBuscador {
+				margin-top: 5px;
+				.botonBuscar {
+					color: $color_2;
+					border: 1px solid orange;
+				}
+			}
+		}
+		}
+		footer {
+			padding-top: 40px;
+			background-color: #3B4371;
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 768px) {
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: center;
+				row-gap: 10px;
+				width: 100%;
+				height: auto;
+				margin: auto;
+				padding-bottom: 5px;
+			}
+			.redes1 {
+				background-color: rgb(245,225,161);
+				margin-left: 15px;
+				margin-bottom: 10px;
+				padding-top: 5px;
+				height: 50px;
+				width: auto;
+				border-radius: 50px;
+				text-align: center;
+				display: flex;
+				@media (max-width: 768px) {
+					margin-left: 0px;
+					margin-bottom: 0px;
+					width: 300px;
+					}
+				.iconitos {
+					height: 40px;
+					width: 60px;
+					margin: auto;
+					justify-content: space-around;
+					align-items: center;
+					a {
+						img {
+						width: 35px;
+						height: auto;
+						}
+					}
+				}
+			}
+			.footerProfe2{
+				margin-right: 15px;
+				display: flex;
+				flex-direction: row;
+				border-radius: 50px;
+				margin-bottom: 10px;
+				@media (max-width: 768px) {
+				margin-right: 0px;
+				margin-bottom: 0px;
+				}
+				.logoNa {
+					border-radius: 50px;
+				}
+				h5 {
+					color: $color_2;
+					padding-top: 10px;
+					@media (max-width: 340px) {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+}

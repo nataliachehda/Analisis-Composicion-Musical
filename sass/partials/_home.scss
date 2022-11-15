@@ -1,0 +1,90 @@
+$background-color_1: rgb(245,225,161);
+body{
+	header{
+		section{
+			.pageDescription {
+				color: $background-color_1;
+				@media (min-width: 768px) {
+						margin-left: 50px;
+						margin-right: 50px;
+						padding-left: 40px;
+						padding-right: 40px;
+					}
+			}
+		}
+	}
+	.mainIndex{
+		section{
+			.cardsCompositor {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: repeat(6, 1fr);
+				row-gap: 6px;
+				margin-bottom: 50px;
+					@media (min-width: 768px) {
+					grid-template-columns: repeat(2, 1fr);
+					grid-template-rows: repeat(3, 1fr);
+					}
+					@media (min-width: 1280px) {
+					grid-template-columns: repeat(3, 1fr);
+					grid-template-rows: repeat(2, 1fr);
+					}
+				.tarjetasCompositores {
+					width: 12rem;
+					cursor: pointer;
+					justify-self: center;
+					&:hover {
+						.contenidoTarjetas {
+							transform: rotateY(0.5turn);
+						}
+					}
+					.contenidoTarjetas {
+						text-align: center;
+						border-radius: 50px;
+						position: relative;
+						transition: all 2.25s;
+						background-color: $background-color_1;
+						padding: 5em;
+						transform-style: preserve-3d;
+						.frenteTarjetas {
+							position: absolute;
+							top: 0;
+							left: 0;
+							bottom: 0;
+							right: 0;
+							padding-top: 25px;
+							transform-style: preserve-3d;
+							backface-visibility: hidden;
+							border-radius: 50px;
+							.tituloGrande {
+								transform: translateZ(5rem);
+								font-size: 1.6rem;
+							}
+							.subtituloAbajo {
+								transform: translateZ(2rem);
+							}
+						}
+						.atrasTarjetas {
+							position: absolute;
+							top: 0;
+							left: 0;
+							bottom: 0;
+							right: 0;
+							padding-top: 35px;
+							transform-style: preserve-3d;
+							backface-visibility: hidden;
+							transform: rotateY(0.5turn);
+							background-color: coral;
+							border-radius: 50px;							
+							.descripcionTarjetas {
+								padding-left: 10px;
+								padding-right: 10px;
+								transform: translateZ(3rem);								
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
+}

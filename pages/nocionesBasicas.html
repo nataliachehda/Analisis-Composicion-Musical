@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EnMusicArte</title>
+    <meta name="description" content="Para poder realizar los análisis comprendiendo de lo que estamos hablando, primero aprendamos conceptos básicos y qué podemos indagar con ellos">
+    <meta name="keywords" content="melodía, ritmo, armonía, textura, instrumentación, dinámica, conceptos básicos, nociones, preguntas para análisis compositivo, analizar">
+    <title>Nociones básicas de Música</title>
     <link rel="icon" type="image/x-icon" href="../images/music.png" />
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -18,285 +20,254 @@
     href="https://fonts.googleapis.com/css2?family=Texturina:opsz@12..72&display=swap"
     rel="stylesheet"
     />
-</head>
-<body class="conceptosBody">
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-    ></script>
-<header>
-    <nav class="navFondo navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-            <img
-                src="../images/Sketches.png"
-                alt="Logo"
-                width="100%"
-                height="auto"
-                class="d-inline-block align-text-top"/>
-            </a>
-        </div>
-        <div class="container-fluid">
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./nocionesBasicas.html">Nociones básicas de música</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./vivaldi.html">Barroco</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./mozart.html">Clasicismo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./schubert.html">Romanticismo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./debussy.html">Impresionismo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <form class=" barraBuscador d-flex" role="search">
-            <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Buscar"
-            aria-label="search"/>
-            <button class="botonBuscar btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+  </head>
+  <body>
+    <header>
+      <nav class="navFondo navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+              <img
+                  src="../images/Sketches.png"
+                  alt="Logo"
+                  width="100%"
+                  height="auto"
+                  class="d-inline-block align-text-top"/>
+              </a>
+          </div>
+          <div class="container-fluid">
+              <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./nocionesBasicas.html">Nociones básicas de música</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="./vivaldi.html">Barroco</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="./mozart.html">Clasicismo</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="./schubert.html">Romanticismo</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="./williams.html">Siglo XX</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <div class="container-fluid">
+          <form class=" barraBuscador d-flex" role="search">
+              <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="search"/>
+              <button class="botonBuscar btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+      </div>
+    </header>
+    <main class="subMenu">
+      <div class="container text-center"></div>
+      <div class="row justify-content-around">
+        <div class="tarjetaConceptos col-lg-2 col-md-6">
+        <h5><a href="#melodia">Melodía</a></h5>
+      </div>
+      <div class="tarjetaConceptos col-lg-2 col-md-6">
+        <h5><a href="#ritmo">Ritmo</a></h5>
+      </div>
+      <div class="tarjetaConceptos col-lg-2 col-md-6">
+        <h5><a href="#armonia">Armonía</a></h5>
+      </div>
     </div>
-</header>
-<main>
-  <div class="container text-center"></div>
-<div class=" row justify-content-around">
-  <div class="tarjetaConceptos col-lg-2 col-md-6">
-    <h5><a href="#melodia">Melodía</a></h5>
-  </div>
-  <div class="tarjetaConceptos col-lg-2 col-md-6">
-    <h5><a href="#ritmo">Ritmo</a></h5>
-  </div>
-  <div class="tarjetaConceptos col-lg-2 col-md-6">
-    <h5><a href="#armonia">Armonia</a></h5>
-  </div>
-  <div class="container text-center"></div>
-<div class=" row justify-content-around">
-  <div class="tarjetaConceptos col-lg-2 col-md-6">
-    <h5><a href="#textura">Textura</a></h5>
-  </div>
-  <div class="tarjetaConceptos col-lg-2 col-md-6">
-    <h5><a href="#dinamica">Dinámica</a></h5>
-  </div>
-  <div class="tarjetaConceptos col-lg-2 col-md-6">
-    <h5><a href="#instrumentacion">Instrumentación</a></h5>
-  </div class="tarjetaConceptos">
-</div>
-</main>
-<section class="Page1">
-  <article class="articleContainer1">
-      <h3>Melodía</h3>
-        <p id="melodia">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-          blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-          totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Quibusdam explicabo cupiditate placeat 
-          odit ea quo quas veniam in sequi quae molestiae ipsum, alias quam 
-          necessitatibus laborum, dolorum dolor ab magni! Lorem ipsum dolor sit, 
-          amet consectetur adipisicing elit. Magnam corporis ut ipsa id nulla 
-          neque veritatis tenetur sapiente excepturi totam minus non sed quia, 
-          eveniet deserunt quisquam cupiditate, pariatur quibusdam. Lorem ipsum 
-          dolor sit, amet consectetur adipisicing elit. Dignissimos odio veritatis 
-          velit maiores quisquam quaerat rem sed eligendi, blanditiis quae dolores
-          aliquid veniam adipisci! Voluptas magnam beatae hic animi iusto.Lorem 
-          ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates 
-          quo liber tenetur nam commodi animi facilis! Voluptatibus ut rem alias minus, 
-          a nihil laborum, dolore, natus voluptatem sit deleniti?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-          blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-          totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit 
-          amet consectetur adipisicing elit. Minus dolorem, optio quam 
-          itaque vero commodi iusto, autem obcaecati esse consequatur at a 
-          nostrum. Quod eius dolorem nobis porro ea repellendus!
+    <div class="container text-center"></div>
+    <div class="row justify-content-around">
+      <div class="tarjetaConceptos col-lg-2 col-md-6">
+        <h5><a href="#textura">Textura</a></h5>
+      </div>
+      <div class="tarjetaConceptos col-lg-2 col-md-6">
+        <h5><a href="#dinamica">Dinámica</a></h5>
+      </div>
+      <div class="tarjetaConceptos col-lg-2 col-md-6">
+        <h5><a href="#instrumentacion">Instrumentación</a></h5>
+      </div>
+    </div>
+    </main>
+    <section>
+      <article class="articleContainer1">
+        <h3 id="melodia">Melodía</h3>
+        <p>
+          Una melodía es una sucesión de sonidos que es percibida 
+          como una sola entidad. Se desenvuelve en una secuencia lineal, 
+          es decir, a lo largo del tiempo, y tiene una identidad y significado
+          propio dentro de un entorno sonoro particular. En su sentido más 
+          literal, una melodía es una combinación de alturas y ritmo. Se puede considerar que la melodía
+          es el primer plano respecto del acompañamiento de fondo. 
+          Pero una línea melódica o una voz no es necesariamente una 
+          melodía en primer grado. <br>
+          El movimiento melódico puede generarse desde distintos comportamientos: <br>
+          - Escalas: hay una sucesion de sonidos, todos con alturas una al lado de la otra formando 
+          una “escalerita” que puede ser ascendente o descendente. Diremos que es escala cuando la 
+          sucesión está formada por 3 o más sonidos. <br>
+          - Saltos: para pasar al siguiente sonido, la altura del sonido sufre un corte abrupto. <br>
+          - Nota continua: un sonido pasa al sonido siguiente moviéndose a la altura que tiene 
+          inmediatamente al lado, no haciendo necesariamente una escala. <br>
+          - Nota repetida: la altura del sonido no se modifica, sino que la nota se repite. <br>
+          Podemos describir la dirección del movimiento melódico de la siguiente manera: <br>
+          - Movimiento ascendente: el sonido se dirige hacia lo agudo, subiendo su altura. <br>
+          - Movimiento descendente: el sonido se dirige hacia lo grave, bajando su altura. <br>
+          - La altura se mantiene: en la sucesión de sonidos, no se modifica la altura. <br>
+          Cada melodía puede presentar una variedad de movimientos: por momentos puede hacer 
+          saltos que son ascendentes, luego descendentes, luego tener movimiento por nota continua, 
+          repetir notas, realizar nuevamente saltos, hacer una escala ascendente... 
+          Todo depende de la intención del compositor, de la idea que pensó, 
+          la variedad de movimiento que quiere o necesita darle a su melodía. <br>
+          <br>
+          Para analizar la melodía, debemos plantearnos preguntas como: <br>
+          ¿Realiza escalas, saltos? ¿Repite mucho las notas? ¿Se puede identificar 
+          un <em> leitmotiv </em>(célula melódica o “tema” musical que representa una 
+          idea y que va reapareciendo a lo largo de una obra)? Con el leitmotiv,
+          el compositor da unidad a la obra.) ¿Realiza pausas expresivas? 
+          ¿Se destaca la melodía de algún instrumento en particular? 
+          ¿se pueden identificar jerarquías melódicas (se distingue una melodía más importante que otra)? 
+          ¿Hay giros melódicos con características especiales?
+          </p>
+      </article>
+      <article class="articleContainer1">
+        <h3 id="ritmo">Ritmo</h3>
+        <p>
+          Es la forma de sucederse y alternar una serie de sonidos en un determinado
+          intervalo de tiempo. Cada nota tendrá una duración relativa y un acento particular. Esta sucesión
+          de notas con sus duraciones y acentos, por lo general se organizan en grupos regulares, 
+          con un sentido discursivo. <br>
+          Podemos a grandes rasgos describir la duración del ritmo según: <br>
+          - Ritmos largos: los sonidos presentan una duración general extensa en el tiempo. 
+          El sonido dura “mucho” en proporción a la duración de la frase melódica o rítmica. 
+          Esto da una sensación de lentitud. <br>
+          - Ritmos cortos: los sonidos presentan una duración general breve en el tiempo. 
+          El sonido dura “poco” en proporción a la duración de la frase melódica o rítmica. 
+          Esto produce una sensación de rapidez. <br>
+          <br>
+          Para analizar el ritmo, debemos plantearnos preguntas como: <br>
+          Sus células rítmicas son cortas o largas? ¿Hay cambios en el tempo?
+          ¿Posee un ritmo constante o variado?
         </p>
-    </article>
-<article class="articleContainer1">
-  <h3>Ritmo</h3>
-    <p id="ritmo">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem, ipsum dolor sit amet consectetur 
-      adipisicing elit. Necessitatibus beatae commodi, consequuntur cum praesentium 
-      laboriosam culpa, quidem asperiores rem laborum, dignissimos iure. 
-      Quaerat minus accusantium neque amet expedita dignissimos reprehenderit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Quibusdam explicabo cupiditate placeat 
-      odit ea quo quas veniam in sequi quae molestiae ipsum, alias quam 
-      necessitatibus laborum, dolorum dolor ab magni! Lorem ipsum dolor sit, 
-      amet consectetur adipisicing elit. Magnam corporis ut ipsa id nulla 
-      neque veritatis tenetur sapiente excepturi totam minus non sed quia, 
-      eveniet deserunt quisquam cupiditate, pariatur quibusdam. Lorem ipsum 
-      dolor sit, amet consectetur adipisicing elit. Dignissimos odio veritatis 
-      velit maiores quisquam quaerat rem sed eligendi, blanditiis quae dolores
-      aliquid veniam adipisci! Voluptas magnam beatae hic animi iusto.Lorem 
-      ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates 
-      quo liber tenetur nam commodi animi facilis! Voluptatibus ut rem alias minus, 
-      a nihil laborum, dolore, natus voluptatem sit deleniti?
-    </p>
-</article>
-<article class="articleContainer1">
-  <h3>Armonía</h3>
-    <p id="armonia">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit, 
-      amet consectetur adipisicing elit. Ex reiciendis perspiciatis maxime. 
-      Quam, inventore mollitia unde molestias fugit dolores reprehenderit 
-      dignissimos deleniti sapiente quibusdam eum quas rerum in quo. Assumenda?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem, ipsum dolor sit amet consectetur 
-      adipisicing elit. Necessitatibus beatae commodi, consequuntur cum praesentium 
-      laboriosam culpa, quidem asperiores rem laborum, dignissimos iure. 
-      Quaerat minus accusantium neque amet expedita dignissimos reprehenderit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Quibusdam explicabo cupiditate placeat 
-      odit ea quo quas veniam in sequi quae molestiae ipsum, alias quam 
-      necessitatibus laborum, dolorum dolor ab magni! Lorem ipsum dolor sit, 
-      amet consectetur adipisicing elit. Magnam corporis ut ipsa id nulla 
-      neque veritatis tenetur sapiente excepturi totam minus non sed quia, 
-      eveniet deserunt quisquam cupiditate, pariatur quibusdam. Lorem ipsum 
-      dolor sit, amet consectetur adipisicing elit. Dignissimos odio veritatis 
-      velit maiores quisquam quaerat rem sed eligendi, blanditiis quae dolores
-      aliquid veniam adipisci! Voluptas magnam beatae hic animi iusto.Lorem 
-      ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates 
-      quo liber tenetur nam commodi animi facilis! Voluptatibus ut rem alias minus, 
-      a nihil laborum, dolore, natus voluptatem sit deleniti?
-    </p>
-</article>
-<article class="articleContainer2">
-  <h3>Textura</h3>
-    <p id="textura">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit 
-      amet consectetur adipisicing elit. Aliquam voluptates quo libero 
-      tenetur nam commodi animi facilis! Voluptatibus ut rem alias minus, 
-      a nihil laborum, dolore, natus voluptatem sit deleniti?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem, ipsum dolor sit amet consectetur 
-      adipisicing elit. Necessitatibus beatae commodi, consequuntur cum praesentium 
-      laboriosam culpa, quidem asperiores rem laborum, dignissimos iure. 
-      Quaerat minus accusantium neque amet expedita dignissimos reprehenderit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Quibusdam explicabo cupiditate placeat 
-      odit ea quo quas veniam in sequi quae molestiae ipsum, alias quam 
-      necessitatibus laborum, dolorum dolor ab magni! Lorem ipsum dolor sit, 
-      amet consectetur adipisicing elit. Magnam corporis ut ipsa id nulla 
-      neque veritatis tenetur sapiente excepturi totam minus non sed quia, 
-      eveniet deserunt quisquam cupiditate, pariatur quibusdam. 
-    </p>
-</article>
-<article class="articleContainer2">
-  <h3>Dinámica</h3>
-    <p id="dinamica">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem, ipsum dolor sit 
-      amet consectetur adipisicing elit. Earum ut fugit ipsam odio obcaecati,
-      nam quis neque adipisci explicabo molestiae excepturi tenetur quo 
-      tempora ab dolor inventore voluptate. Labore, voluptatibus!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem, ipsum dolor sit amet consectetur 
-      adipisicing elit. Necessitatibus beatae commodi, consequuntur cum praesentium 
-      laboriosam culpa, quidem asperiores rem laborum, dignissimos iure. 
-      Quaerat minus accusantium neque amet expedita dignissimos reprehenderit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Quibusdam explicabo cupiditate placeat 
-      odit ea quo quas veniam in sequi quae molestiae ipsum, alias quam 
-      necessitatibus laborum, dolorum dolor ab magni! Lorem ipsum dolor sit, 
-      amet consectetur adipisicing elit. Magnam corporis ut ipsa id nulla 
-      neque veritatis tenetur sapiente excepturi totam minus non sed quia, 
-      eveniet deserunt quisquam cupiditate, pariatur quibusdam. 
-    </p>
-</article>
-<article class="articleContainer2">
-    <h3>Instrumentación</h3>
-    <p id="instrumentacion">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit 
-      amet consectetur adipisicing elit. Minus dolorem, optio quam 
-      itaque vero commodi iusto, autem obcaecati esse consequatur at a 
-      nostrum. Quod eius dolorem nobis porro ea repellendus!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem, ipsum dolor sit amet consectetur 
-      adipisicing elit. Necessitatibus beatae commodi, consequuntur cum praesentium 
-      laboriosam culpa, quidem asperiores rem laborum, dignissimos iure. 
-      Quaerat minus accusantium neque amet expedita dignissimos reprehenderit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Consequuntur sequi ullam quae nam explicabo id distinctio culpa,
-      blanditiis repellat accusantium ducimus ipsum quisquam deserunt
-      totam et nulla aliquid eligendi deleniti! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Quibusdam explicabo cupiditate placeat 
-      odit ea quo quas veniam in sequi quae molestiae ipsum, alias quam 
-      necessitatibus laborum, dolorum dolor ab magni! 
-    </p>
-</article>
-</section>
-</body>
-<footer>
-  <div>
-    <img
-      src="../images/logoNa.png"
-      alt="Logo"
-      height="50px"
-      class="d-inline-block align-text-top"/>
-  </div>
-    <h5>
-      Profesora Natalia Chehda
-    </h5>
-</footer>
-</body>
+      </article>
+      <article class="articleContainer1">
+        <h3 id="armonia">Armonía</h3>
+        <p>
+          La armonía es la combinación simultánea de notas para formar un todo musicalmente significativo.
+          La unidad básica de la armonía es el acorde, que puede estar formado por dos o más notas simultaneas. 
+          La armonía puede dar "color" o caracter de innumerables maneras a cualquier línea melódica unitaria.
+          El lenguaje armónico de un compositor tendrá características distintivas que le darán gran parte 
+          de identidad a dicho lenguaje. <br>
+          El análisis armónico requiere de conocimientos técnicos específicos; su analisis será obviado 
+          en esta ocasión, sin imposibilitar a los espectadores de una apreciación suficientemente 
+          enriquecedora y provechosa.
+      </p>
+      </article>
+      <article class="articleContainer2">
+        <h3 id="textura">Textura</h3>
+        <p>
+          La textura de la música tiene que ver con la cantidad de líneas melódicas que suenan
+          en simultáneo. De acuerdo a su comportamiento, podemos realizar distintas clasificaciones. 
+          Algunas de estas clasificaciones son: <br>
+          Monodía: es una sola línea melódica. Puede ser ejecutado por un solista (un único
+          cantante o instrumentista) o al unísono por varios. <br>
+          Melodía con acompañamiento: en este tipo de textura se distinguen dos capas; 
+          una suena por encima (melodía principal), y, por debajo, un bloque sonoro 
+          que sirve de sosten o acompañamiento a la melodía principal. <br>
+          Homofonía: melodías simultáneas, cada una con un movimiento melódico propio 
+          y distinto entre sí, que avanzan al mismo ritmo, todas a la vez. 
+          Tal sincronización rítmica debilita la percepción individual de las partes intermedias, 
+          a veces solo destacando las partes extremas de la textura: la aguda y la grave. <br>
+          Contrapunto: melodías simultáneas que avanzan con distintos ritmos, 
+          todas ellas interesantes y con personalidad propia. El contrapunto puede ser imitativo 
+          (un motivo melódico emigra de una a otra voz y va sonando
+          sucesivamente en las diferentes partes de la textura) o libre (cada voz traza su propio movimiento
+          y ritmo). <br>
+          <br>
+          Para analizar la textura, debemos hacernos preguntas como: <br>
+          ¿Es una monofonía, homofonía, melodía con acompañamiento, etc.? ¿Cuántas capas sonoras suenan a la vez?
+          ¿Cuáles son las funciones de estas capas? ¿Se puede distinguir una jerarquía entre ellas?
+        </p>
+      </article>
+      <article class="articleContainer2">
+        <h3 id="dinamica">Dinámica</h3>
+        <p>
+          Es el conjunto de diferencias de volumenes o grados de intensidades sonoras que aparecen
+          en un fragmento musical o en una pieza. En la notación, los cambios de volumen o intensidad
+          con que el músico debe interpretar lo que toca se indican mediante palabras, abreviaturas,
+          signos o simbolos. <br>
+          <br>
+          Para analizar la dinámica de una obra, debemos hacernos preguntas como: <br>
+          ¿Hay cambios en la intensidad (el volumen)? ¿cambia al medio o al final 
+          de la frase melódica? ¿Se utiliza para destacar alguna idea musical? 
+        </p>
+      </article>
+      <article class="articleContainer2">
+        <h3 id="instrumentacion">Instrumentación</h3>
+        <p>
+          La instrumentación es la selección de instrumentos realizada para una pieza musical,
+          que requiere de parte del compositor la toma de decisiones a partir de su intención discursiva.
+          Tendrá que analizar la tímbrica que desea, el resultado sonoro a partir de los efectos que produce la 
+          combinación de distintos instrumentos, el caracter que intenta transmitir desde la sonoridad que los 
+          distintos instrumentos ofrecen, etc. <br>
+          <br>
+          Para analizar la instrumentación de una obra, debemos hacernos preguntas como: <br>
+          ¿Por qué habrá elegido el compositor ese instrumento? ¿qué características tiene su tímbrica? 
+          ¿A qué familia pertenece? ¿Es un instrumento melódico o armónico? Si estamos escuchando una 
+          orquesta completa, ¿cuán grande es? ¿cuáles son los instrumentos que se destacan?
+          ¿cuáles son sus roles? ¿hay algún instrumento que pueda ser asociado a un <em> leitmotiv</em>?
+      </p>
+      </article>
+    </section>
+  </body>
+  <footer>
+    <div class="redes1">
+      <div class="iconitos">
+        <a href="https://www.facebook.com/"><img src="../images/facebook.svg" alt="facebook"></a>
+      </div>
+      <div class="iconitos">
+        <a href="https://www.instagram.com/"><img src="../images/instagram.svg" alt="instagram"></a>
+      </div>
+      <div class="iconitos">
+        <a href="https://twitter.com/"><img src="../images/twitter.svg" alt="twitter"></a>
+      </div>
+      <div class="iconitos">
+        <a href="https://www.youtube.com/channel/UC1DK3x0YC81vt5DNNeofEig"><img src="../images/youtube.svg" alt="youtube"></a>
+      </div>
+      <div class="iconitos">
+        <a href="https://github.com/nataliachehda"><img src="../images/github.svg" alt="github"></a>
+      </div>
+    </div>
+    <div class="footerProfe2">
+      <img  class="logoNa"
+        src="../images/logoNa.png"
+        alt="Logo"
+        height="50px"
+        class="d-inline-block align-text-top"
+      />
+      <h5>Profesora Natalia Chehda</h5>
+    </div>
+  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

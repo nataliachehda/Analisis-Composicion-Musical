@@ -1,0 +1,87 @@
+$color_1: #DDE8B9;
+$color_2: #07182E;
+$padding: 30px;
+
+@mixin tamano ($width,$height){
+	width: $width;
+	height: $height;
+	}
+
+@keyframes rotBGimg {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+body {
+	.subMenu {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+		background: linear-gradient(180deg, rgb(175, 89, 35), rgb(241, 231, 166));
+		.row{
+			.tarjetaConceptos {
+				@include tamano ( 150px, 50px);
+				margin: 10px;
+				background: rgb(175, 89, 35);
+				position: relative;
+				display: flex;
+				place-content: center;
+				place-items: center;
+				overflow: hidden;
+				border-radius: 18px;
+				h5 {
+					z-index: 1;
+					a {
+						text-decoration: none;
+						color: $color_1;
+					}
+				}
+				&::before {
+					content: '';
+					position: absolute;
+					@include tamano ( 100px, 200px);
+					background-image: linear-gradient(180deg, rgb(175, 89, 35), rgb(241, 231, 166));
+					animation: rotBGimg 7s linear infinite;
+					transition: all 0.2s linear;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					background: #3B4371;
+					inset: 5px;
+					border-radius: 15px;
+				}
+			}
+		}
+	}
+	section {
+		.articleContainer1 {
+			color: $color_1;
+			@media (min-width: 768px) {
+			margin: 50px;
+			}
+			h3 {
+				padding: $padding;
+			}
+			p {
+				padding: $padding;
+			}
+		}
+		.articleContainer2 {
+			color: $color_2;
+			@media (min-width: 768px) {
+				margin: 50px;
+				}
+			p {
+				padding: $padding;
+			}
+			h3 {
+				padding: $padding;
+			}
+		}
+	}
+}

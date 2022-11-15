@@ -1,293 +1,413 @@
 * {
-    font-family: 'Texturina', serif;
-    text-decoration: none;
-    list-style: none;
+  font-family: "Texturina", serif;
+  text-decoration: none;
+  list-style: none;
 }
-body{
-    background: #F3904F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    ;
+
+body {
+  background: #F3904F;
+  background: -webkit-linear-gradient(to bottom, #3B4371, #F3904F);
+  background: linear-gradient(to bottom, #3B4371, #F3904F);
 }
-.navFondo {
-background-image: url(../images/fondomusica.jpg);
-background-size:cover;
+body header .navFondo {
+  background-image: url(../images/fondomusica.jpg);
+  background-size: cover;
 }
-.nav-link {
-    color: black;
+body header .navFondo .container-fluid .navbar-brand img {
+  border-radius: 50px;
 }
-.botonBuscar {
-    color: antiquewhite;
-    border: 1px solid orange;
+body header .navFondo .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  color: black;
 }
-.barraBuscador {
-    margin-top:5px;
+body header .container-fluid .barraBuscador {
+  margin-top: 5px;
 }
-.pageDescription {
-    color: antiquewhite;
+body header .container-fluid .barraBuscador .botonBuscar {
+  color: antiquewhite;
+  border: 1px solid orange;
 }
-/* Tarjetas Index Obras/Compositores */
-.cards-compositor{ 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    row-gap: 6px;
-    margin-bottom: 50px;
+body footer {
+  padding-top: 40px;
+  background-color: #3B4371;
+  display: flex;
+  justify-content: space-between;
 }
-.tarjetasCompositores {
-    width: 12rem;
-    cursor: pointer;
-    justify-self: center;
-}
-.contenidoTarjetas {
-    text-align: center;
-    position: relative;
-    transition: all 2.25s;
-    background-color: rgb(245, 225, 161);
-    padding: 5em;
-    transform-style: preserve-3d;
-}
-.tarjetasCompositores:hover .contenidoTarjetas {
-    transform: rotateY(0.5turn);
-}
-.frenteTarjetas,
-.atrasTarjetas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding-top: 25px;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-}
-.tituloGrande {
-    transform: translateZ(5rem);
-    font-size: 1.8rem;
-}
-.subtitulo-abajo {
-    transform: translateZ(2rem);
-}
-.atrasTarjetas {
-    transform: rotateY(0.5turn);
-    background-color: coral;
-}  
-.descripcionTarjetas {
-    transform: translateZ(3rem);
-}
-/* Conceptos básicos de Música */
-.tarjetaConceptos {
-    width: 150px;
-    height: 50px;
-    background: #07182E;
-    position: relative;
+@media (max-width: 768px) {
+  body footer {
     display: flex;
-    place-content: center;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 18px;
-}
-.tarjetaConceptos h5 {
-    z-index: 1;
-}
-.tarjetaConceptos h5 a {
-    text-decoration: none;
-    color: white;
-}
-.tarjetaConceptos::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    background-image: linear-gradient(180deg, rgb(175, 89, 35), rgb(241, 231, 166));
-    height: 200px;
-    animation: rotBGimg 3s linear infinite;
-    transition: all 0.2s linear;
-}
-@keyframes rotBGimg {
-    from {
-    transform: rotate(0deg);
-    }
-    to {
-    transform: rotate(360deg);
-    }
-}
-.tarjetaConceptos::after {
-    content: '';
-    position: absolute;
-    background: #3B4371;
-    inset: 5px;
-    border-radius: 15px;
-}  
-.conceptosBody {
-    margin: 10px;
-}
-.articleContainer1 {
-    color:#DDE8B9;
-}
-.articleContainer2 {
-    color: #07182E;
-}
-.articleContainer1 p{
-    padding: 30px;
-}
-.articleContainer2 p{
-    padding: 30px;
-}
-.articleContainer1 h3{
-    padding: 30px;
-}
-.articleContainer2 h3{
-    padding: 30px;
-}
-/* Paginas Compositores*/
-.containerCompositor h2 {
-    text-align: center;
-}
-.Compositor {
-    margin: auto;
-    border: 1px solid black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #DDE8B9;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
-}
-.Compositor p {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 50px;
-}
-.articleAnalisis {
-    display: flex;
-    flex-direction: column;
-    background-color: #DDE8B9;
+    row-gap: 10px;
+    width: 100%;
     height: auto;
-    margin:0px auto;
-    border: 1px solid black;
-    text-align: center;
-    align-items: center;
+    margin: auto;
+    padding-bottom: 5px;
+  }
 }
-.articleAnalisis p {
-    padding: 20px;
+body footer .redes1 {
+  background-color: rgb(245, 225, 161);
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  height: 50px;
+  width: auto;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
 }
-.h2AnalisisCompositivo {
-    text-align: center;
+@media (max-width: 768px) {
+  body footer .redes1 {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 300px;
+  }
 }
-.imgVivaldi img {
-    display: flex;
-    height: 300px;
-    width: auto;
+body footer .redes1 .iconitos {
+  height: 40px;
+  width: 60px;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
 }
-.imgMozart img {
-    display: flex;
-    height: 300px;
-    width: auto;
+body footer .redes1 .iconitos a img {
+  width: 35px;
+  height: auto;
 }
-.imgSchubert img {
-    display: flex;
-    height: 300px;
-    width: auto;  
+body footer .footerProfe2 {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
-.imgDebussy {
-    display: flex;
-    height: 300px;
-    width: auto;   
-    }
-    /* Página contacto */
-.contactoContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #DDE8B9;
-    margin:0px auto;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
+@media (max-width: 768px) {
+  body footer .footerProfe2 {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
 }
-.aboutP1 {
-padding-top: 30px;
-margin: 40px;
+body footer .footerProfe2 .logoNa {
+  border-radius: 50px;
 }
-.aboutP2 {
-    margin: 50px;
-    }
-.contactoContainer img {
-    height: 300px;
-    width: auto;
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow:  20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
+body footer .footerProfe2 h5 {
+  color: antiquewhite;
+  padding-top: 10px;
 }
-.h2__profesora {
-    display: flex;
-    background-color: #DDE8B9;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    margin:0px auto;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
+@media (max-width: 340px) {
+  body footer .footerProfe2 h5 {
+    font-size: 16px;
+  }
 }
-.contacto__form {
-    height: 300px;
-    width: auto;
-    text-align: center;
-    margin: 0% auto;
-    padding-top: 30px;
-}
-/* Footer */
-footer {
-    padding-top: 40px;
-    background-color: #3B4371;
-    display: flex;
-}
-footer h5 {
-    color: antiquewhite;
-    padding-top: 10px;
+
+body header section .pageDescription {
+  color: rgb(245, 225, 161);
 }
 @media (min-width: 768px) {
-    .cards-compositor{ 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-.pageDescription {
+  body header section .pageDescription {
     margin-left: 50px;
     margin-right: 50px;
     padding-left: 40px;
     padding-right: 40px;
+  }
 }
-.articleAnalisis {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+body .mainIndex section .cardsCompositor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 6px;
+  margin-bottom: 50px;
 }
-.Compositor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 768px) {
+  body .mainIndex section .cardsCompositor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
-.contactoContainer {
-    display: flex;
-    flex-direction: row;
-padding: 40px;
-}
-}
-@media (min-width: 1280px){
-.cards-compositor{ 
+@media (min-width: 1280px) {
+  body .mainIndex section .cardsCompositor {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
 }
-.conceptos {
+body .mainIndex section .cardsCompositor .tarjetasCompositores {
+  width: 12rem;
+  cursor: pointer;
+  justify-self: center;
+}
+body .mainIndex section .cardsCompositor .tarjetasCompositores:hover .contenidoTarjetas {
+  transform: rotateY(0.5turn);
+}
+body .mainIndex section .cardsCompositor .tarjetasCompositores .contenidoTarjetas {
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
+  transition: all 2.25s;
+  background-color: rgb(245, 225, 161);
+  padding: 5em;
+  transform-style: preserve-3d;
+}
+body .mainIndex section .cardsCompositor .tarjetasCompositores .contenidoTarjetas .frenteTarjetas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 25px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 50px;
+}
+body .mainIndex section .cardsCompositor .tarjetasCompositores .contenidoTarjetas .frenteTarjetas .tituloGrande {
+  transform: translateZ(5rem);
+  font-size: 1.6rem;
+}
+body .mainIndex section .cardsCompositor .tarjetasCompositores .contenidoTarjetas .frenteTarjetas .subtituloAbajo {
+  transform: translateZ(2rem);
+}
+body .mainIndex section .cardsCompositor .tarjetasCompositores .contenidoTarjetas .atrasTarjetas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 35px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateY(0.5turn);
+  background-color: coral;
+  border-radius: 50px;
+}
+body .mainIndex section .cardsCompositor .tarjetasCompositores .contenidoTarjetas .atrasTarjetas .descripcionTarjetas {
+  padding-left: 10px;
+  padding-right: 10px;
+  transform: translateZ(3rem);
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body .subMenu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: linear-gradient(180deg, rgb(175, 89, 35), rgb(241, 231, 166));
+}
+body .subMenu .row .tarjetaConceptos {
+  width: 150px;
+  height: 50px;
+  margin: 10px;
+  background: rgb(175, 89, 35);
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 18px;
+}
+body .subMenu .row .tarjetaConceptos h5 {
+  z-index: 1;
+}
+body .subMenu .row .tarjetaConceptos h5 a {
+  text-decoration: none;
+  color: #DDE8B9;
+}
+body .subMenu .row .tarjetaConceptos::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background-image: linear-gradient(180deg, rgb(175, 89, 35), rgb(241, 231, 166));
+  animation: rotBGimg 7s linear infinite;
+  transition: all 0.2s linear;
+}
+body .subMenu .row .tarjetaConceptos::after {
+  content: "";
+  position: absolute;
+  background: #3B4371;
+  inset: 5px;
+  border-radius: 15px;
+}
+body section .articleContainer1 {
+  color: #DDE8B9;
+}
+@media (min-width: 768px) {
+  body section .articleContainer1 {
+    margin: 50px;
+  }
+}
+body section .articleContainer1 h3 {
+  padding: 30px;
+}
+body section .articleContainer1 p {
+  padding: 30px;
+}
+body section .articleContainer2 {
+  color: #07182E;
+}
+@media (min-width: 768px) {
+  body section .articleContainer2 {
+    margin: 50px;
+  }
+}
+body section .articleContainer2 p {
+  padding: 30px;
+}
+body section .articleContainer2 h3 {
+  padding: 30px;
+}
+
+.mainContacto .h2Profesora, body .mainCompositor .sectionCompositor .containerCompositor .compositor, body .mainCompositor .sectionCompositor .articleAnalisis {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+body .mainCompositor .sectionCompositor .h2AnalisisCompositivo {
+  text-align: center;
+  margin: 20px;
+}
+body .mainCompositor .sectionCompositor .articleAnalisis {
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #DDE8B9;
+  height: auto;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+@media (min-width: 768px) {
+  body .mainCompositor .sectionCompositor .articleAnalisis {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+body .mainCompositor .sectionCompositor .articleAnalisis p {
+  padding: 20px;
+}
+body .mainCompositor .sectionCompositor .articleAnalisis .imgCompositores {
+  margin: auto;
+}
+body .mainCompositor .sectionCompositor .articleAnalisis .imgCompositores .retrato {
+  display: flex;
+  width: auto;
+  height: 300px;
+}
+body .mainCompositor .sectionCompositor .containerCompositor h2 {
+  text-align: center;
+  margin: 20px;
+}
+body .mainCompositor .sectionCompositor .containerCompositor .compositor {
+  justify-content: center;
+  margin: auto;
+  border: 1px solid black;
+  flex-direction: column;
+  background-color: #DDE8B9;
+}
+@media (min-width: 1280px) {
+  body .mainCompositor .sectionCompositor .containerCompositor .compositor {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }
+body .mainCompositor .sectionCompositor .containerCompositor .compositor p {
+  padding: 20px;
 }
-@media (min-width: 0px){
-.videoObra {
+body .mainCompositor .sectionCompositor .containerCompositor .compositor .table {
+  margin: 20px;
+}
+body .mainCompositor .sectionCompositor .containerCompositor .compositor .videoObra {
+  padding: 20px;
+  margin-left: 10px;
+  width: auto;
+  height: 500px;
+}
+@media (min-width: 0px) {
+  body .mainCompositor .sectionCompositor .containerCompositor .compositor .videoObra {
     width: 90%;
+  }
 }
-}
-@media (min-width: 563px){
-.videoObra {
+@media (min-width: 563px) {
+  body .mainCompositor .sectionCompositor .containerCompositor .compositor .videoObra {
     width: 100%;
+  }
 }
+
+.mainContacto .h2Profesora {
+  background-color: #DDE8B9;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: space-around;
 }
+.mainContacto .contactoContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  background-color: #DDE8B9;
+  margin: auto;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+@media (min-width: 1280px) {
+  .mainContacto .contactoContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+  }
+}
+.mainContacto .contactoContainer div img {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  margin: 20px;
+  width: auto;
+  justify-self: center;
+}
+@media (max-width: 1280px) {
+  .mainContacto .contactoContainer div img {
+    margin-top: 50px;
+  }
+}
+.mainContacto .contactoContainer .profeParrafo1 {
+  width: 34%;
+  margin: 20px;
+}
+@media (min-width: 320px) {
+  .mainContacto .contactoContainer .profeParrafo1 {
+    width: 90%;
+    height: auto;
+  }
+}
+.mainContacto .contactoContainer .profeParrafo2 {
+  width: 33%;
+  margin: 20px;
+}
+@media (min-width: 320px) {
+  .mainContacto .contactoContainer .profeParrafo2 {
+    width: 90%;
+    height: auto;
+  }
+}
+.mainContacto .sectionForm div .contactoForm {
+  width: auto;
+  height: 300px;
+  text-align: center;
+  margin: 0% auto;
+  padding-top: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

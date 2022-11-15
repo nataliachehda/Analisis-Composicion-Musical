@@ -1,122 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EnMusicArte</title>
+    <meta name="description" content="Análisis del primer movimiento del concierto Invierno de la suite Las cuatro estaciones de Antonio Vivaldi">
+    <meta name="keywords" content="las cuatro estaciones, Invierno, Antonio Vivaldi, barroco, allegro, análisis compositivo, concierto, cuerdas, violín">
+    <title>Invierno - Antonio Vivaldi</title>
     <link rel="icon" type="image/x-icon" href="../images/music.png" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Texturina:opsz@12..72&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Texturina:opsz@12..72&display=swap"
+      rel="stylesheet"
     />
-</head>
-<body>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-    ></script>
-<header>
-    <nav class="navFondo navbar navbar-expand-lg bg-light">
+  </head>
+  <body>
+    <header>
+      <nav class="navFondo navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand" href="../index.html">
             <img
-                src="../images/Sketches.png"
-                alt="Logo"
-                width="100%"
-                height="auto"
-                class="d-inline-block align-text-top"/>
-            </a>
+              src="../images/Sketches.png"
+              alt="Logo"
+              width="100%"
+              height="auto"
+              class="d-inline-block align-text-top"
+            />
+          </a>
         </div>
         <div class="container-fluid">
-            <button
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./nocionesBasicas.html">Nociones básicas de música</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./vivaldi.html">Barroco</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./mozart.html">Clasicismo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./schubert.html">Romanticismo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./debussy.html">Impresionismo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./nocionesBasicas.html"
+                  >Nociones básicas de música</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./vivaldi.html">Barroco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./mozart.html">Clasicismo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./schubert.html">Romanticismo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./williams.html">Siglo XX</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <div class="container-fluid">
-        <form class=" barraBuscador d-flex" role="search">
-            <input
+      </nav>
+      <div class="container-fluid">
+        <form class="barraBuscador d-flex" role="search">
+          <input
             class="form-control me-2"
             type="search"
             placeholder="Buscar"
-            aria-label="search"/>
-            <button class="botonBuscar btn btn-outline-success" type="submit">Buscar</button>
+            aria-label="search"
+          />
+          <button class="botonBuscar btn btn-outline-success" type="submit">
+            Buscar
+          </button>
         </form>
-    </div>
-</header>
-<main>
-  <div class="clearfix"></div>
-    <section>
-      <h2 class="h2AnalisisCompositivo">Vivaldi - Biografía</h2>
+      </div>
+    </header>
+    <main class="mainCompositor">
+      <div class="clearfix"></div>
+      <section class="sectionCompositor">
+        <h2 class="h2AnalisisCompositivo">Antonion Vivaldi - Biografía</h2>
         <article class="articleAnalisis">
-          <div class="imgVivaldi">
-            <img src="../images/Vivaldi.jpg" alt="" />
+          <div class="imgCompositores">
+            <img class="retrato" src="../images/Vivaldi.jpg" alt="Pintura tipo retrato de Antonio Vivaldi" />
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias
-            rerum odit, cum quas consequatur dolorem consectetur provident, sit
-            non voluptate autem architecto eaque omnis dolores. Dicta molestiae
-            ducimus quas?
+            Antonio Vivaldi (Venecia, 4 de marzo de 1678-Viena, 28 de julio de
+            1741) fue un compositor, violinista, profesor y
+            sacerdote católico veneciano del Barroco. Era apodado
+            <em>Il prete rosso</em>
+            («El cura rojo») por ser sacerdote y pelirrojo. Se le considera uno
+            de los más grandes compositores barrocos: su influencia se extendió
+            por toda Europa y fue fundamental en el desarrollo de la música
+            instrumental heredada de Johann Sebastian Bach. Su maestría se
+            refleja en haber cimentado el género del concierto, el más
+            importante de su época. Compuso unas setecientas setenta obras,
+            entre las cuales se cuentan más de cuatrocientos conciertos para
+            flauta, violín, y una variedad de otros instrumentos musicales, como
+            así también cerca de cuarenta y seis óperas.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-            est! Atque exercitationem possimus praesentium explicabo suscipit
-            nihil, corporis facere dolorum, dolorem sint eligendi illum quia
-            deleniti ipsum soluta ea obcaecati?
+            Muchas de sus composiciones las escribió para el conjunto musical
+            femenino del <em> Ospedale della Pietà</em>, un hogar para niños
+            abandonados. Vivaldi había trabajado allí como sacerdote católico
+            durante dieciocho meses y estuvo empleado de 1703 a 1715 y de 1723 a
+            1740. También tuvo cierto éxito con costosas representaciones de sus
+            óperas en Venecia, Mantua y Viena. Después de conocer al emperador
+            Carlos VI del Sacro Imperio Romano Germánico, se trasladó a Viena y
+            esperaba el apoyo real. Sin embargo, el emperador murió poco después
+            de su llegada y el propio compositor murió en la pobreza menos de un
+            año después.
           </p>
         </article>
         <article class="containerCompositor">
-          <h2>Analisis compositivo</h2>
-          <div class="Compositor">
+          <h2>
+            Analisis compositivo - 1° mov. del concierto "Invierno"
+            perteneciente a la suite "Las cuatro estaciones"
+          </h2>
+          <div class="compositor">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id
-              consectetur atque officiis laudantium itaque dolorum rem, eveniet
-              hic iusto iure saepe nemo, alias quae, similique maxime ullam
-              necessitatibus dicta.
+              "Las cuatro estaciones" es la obra más conocida de Vivaldi.
+              Publicó los conciertos con unos poemas de acompañamiento
+              (posiblemente escritos por el propio Vivaldi) que describían qué
+              quería representar en relación con cada una de las estaciones.
+              Proporciona uno de los ejemplos más tempranos y detallados de lo
+              que después se llamaría música programática o descriptiva. Vivaldi
+              se esforzó en relacionar su música con los textos de los poemas,
+              traduciendo los versos en música. En la sección media del
+              concierto Primavera, cuando las ovejas duermen, su perro ladrando
+              queda marcado por la sección de viola. De la misma manera se
+              evocan otros acontecimientos naturales. Los instrumentos
+              utilizados para este concierto son el violín solista, el cuarteto
+              de cuerdas (violín primo y segundo, viola, violonchelo,
+              contrabajo) y el bajo continuo (clavecín u órgano).
             </p>
-            <iframe class="videoObra"
+            <p>
+              Vivaldi divide cada concierto en tres movimientos,
+              rápido-lento-rápido, y de la misma manera cada soneto se parte en
+              tres secciones. Dos de estos movimientos, el primero y el tercero,
+              están en tiempo de Allegro o Presto, mientras que el segundo está
+              caracterizado por un tempo de Adagio o Largo, según un esquema que
+              Vivaldi ha adoptado en la mayor parte de sus conciertos. <br />
+              Analizaremos el primer movimiento de "Invierno", cuyo soneto es el
+              siguiente: <br />
+              <br />
+              <em> Allegro </em><br />
+              Helado tiritar entre la nieve plateada <br />
+              al severo soplo del hórrido viento <br />
+              correr batiendo los pies en todo momento; <br />
+              Y por el soberbio castañetear los dientes;
+            </p>
+            <table class="table table-hover">
+              <thead>
+                <tr class="table-primary">
+                  <th class="table-primary" scope="col">Parámetros</th>
+                  <th class="table-primary" scope="col">Análisis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-secondary">
+                  <th class="table-secondary" scope="row">Ritmo</th>
+                  <td class="table-secondary">
+                    Escuchamos al iniciar la obra una melodía de notas repetidas
+                    en donde se hace hincapié en el ritmo más que en el
+                    movimiento melódico, y que nos llevan a pensar en el
+                    “tiritar”, el frío que hace sacudir el cuerpo. También
+                    podríamos evocar la caída de nieve constante, como las notas
+                    de ritmo sostenido y persistente, como “cayendo” sin cesar.
+                  </td>
+                </tr>
+                <tr class="table-success">
+                  <th class="table-success" scope="row">Melodía</th>
+                  <td class="table-success">
+                    Luego, el violín realiza escalas descendentes veloces, que
+                    nos recuerdan al “soplo del hórrido viento”. Estas escalas,
+                    en un raudo movimiento, bajan para luego arremolinarse y
+                    desvanecerse, como el viento que experimentamos en esta
+                    estación. “Correr batiendo los pies en todo momento…” nos
+                    dice el soneto: el conjunto de instrumentos continua en su
+                    melodía y ritmo constante, persistente, invitándonos a
+                    imaginar la marcha de alguien en el cruel clima invernal.
+                  </td>
+                </tr>
+                <tr class="table-danger">
+                  <th class="table-danger" scope="row">Textura</th>
+                  <td class="table-danger">
+                    La textura elegida de esta pieza es melodía con
+                    acompañamiento. Notamos una melodía principal a cargo del
+                    violín, acompañada de un “colchón” sonoro que realizan los
+                    demás instrumentos.
+                  </td>
+                </tr>
+              </tbody>
+              <tr class="table-warning">
+                <th class="table-warning" scope="row">Instrumentación</th>
+                <td class="table-warning">
+                  Podemos notar la variedad de instrumentos que se utilizaban en
+                  la época de Vivaldi para el género concierto. El violín cumple
+                  el papel principal por sobre sus compañeros de tesitura más
+                  grave, siendo idóneas su características sonoras para evocar
+                  elementos como el viento, el "castañetear los dientes", etc...
+                  elementos narrativos de índole "aguda" como vemos que explora
+                  el violin en su registro más brillante.
+                </td>
+              </tr>
+              <tr class="table-info">
+                <th class="table-info" scope="row">Dinámica</th>
+                <td class="table-info">
+                  La decisión del compositor de mantener un ritmo rápido y casi
+                  marcial es deliberada; se busca sumergir al oyente en las
+                  sensaciones que nos trae el clima de esta estación y sus
+                  menesteres. Se resaltan momentos por medio de dinámicas que
+                  gradualmente elevan el volumen para terminar desvaneciéndose,
+                  tal como el comportamiento de los elementos de la naturaleza.
+                </td>
+              </tr>
+            </table>
+            <iframe
+              class="videoObra"
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/lzdXOZtjXc4"
+              src="https://www.youtube.com/embed/UWg5ugyMjIc"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -124,19 +242,40 @@
             ></iframe>
           </div>
         </article>
-    </section>
-</main>
-<footer>
-  <div>
-    <img
-      src="../images/logoNa.png"
-      alt="Logo"
-      height="50px"
-      class="d-inline-block align-text-top"/>
-  </div>
-  <h5>
-    Profesora Natalia Chehda
-  </h5>
-</footer>
-</body>
+      </section>
+    </main>
+    <footer>
+      <div class="redes1">
+        <div class="iconitos">
+          <a href="https://www.facebook.com/"><img src="../images/facebook.svg" alt="facebook"></a>
+        </div>
+        <div class="iconitos">
+          <a href="https://www.instagram.com/"><img src="../images/instagram.svg" alt="instagram"></a>
+        </div>
+        <div class="iconitos">
+          <a href="https://twitter.com/"><img src="../images/twitter.svg" alt="twitter"></a>
+        </div>
+        <div class="iconitos">
+          <a href="https://www.youtube.com/channel/UC1DK3x0YC81vt5DNNeofEig"><img src="../images/youtube.svg" alt="youtube"></a>
+        </div>
+        <div class="iconitos">
+          <a href="https://github.com/nataliachehda"><img src="../images/github.svg" alt="github"></a>
+        </div>
+      </div>
+      <div class="footerProfe2">
+        <img  class="logoNa"
+          src="../images/logoNa.png"
+          alt="Logo"
+          height="50px"
+          class="d-inline-block align-text-top"
+        />
+        <h5>Profesora Natalia Chehda</h5>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,74 @@
+@use '../partials/nociones';
+@use '../partials/compositores';
+$paddings: 60px;
+
+.mainContacto {
+	.h2Profesora {
+		@extend %flex;
+		background-color: nociones.$color_1;
+		padding-top: ($paddings/3)+10;
+		padding-bottom: $paddings;
+		margin: auto;
+		margin-top: 30px;
+		justify-content: space-around;
+	}
+	.contactoContainer {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 100%;
+		background-color: nociones.$color_1;
+		margin: auto;
+		margin-top: 40px;
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+		@media (min-width: 1280px) {
+			display: flex;
+			flex-direction: row;
+			padding: 40px;
+		}
+		div { 
+			img {
+				display: flex;
+				@include nociones.tamano (300px, 400px);
+				border-radius: 50px;
+				background: #e0e0e0;
+				box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+				margin: 20px;
+				width:auto;
+				justify-self: center;
+				@media (max-width: 1280px) {
+					margin-top: 50px;
+				}	
+			}
+		}
+		.profeParrafo1{
+			width: 34%;
+			margin: 20px;
+			@media (min-width: 320px) {
+				@include nociones.tamano (90%, auto);
+				}
+		}
+		.profeParrafo2{
+			width: 33%;
+			margin: 20px;
+			@media (min-width: 320px) {
+			@include nociones.tamano (90%, auto);
+			}
+		}
+	}
+	.sectionForm{
+		div {
+			.contactoForm {
+				@include nociones.tamano (auto, 300px);
+				text-align: center;
+				margin: 0% auto;
+				padding-top: ($paddings)/2;
+			}
+		}
+	}
+}
+
+
+
+

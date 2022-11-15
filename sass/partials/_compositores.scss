@@ -1,0 +1,87 @@
+@use '../partials/nociones';
+
+%flex{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+$ubicacion_flex: (
+flex-direction: column,
+justify-content: center,
+text-align: center,
+);
+
+body {
+	.mainCompositor { 
+		.sectionCompositor {
+			.h2AnalisisCompositivo {
+				text-align: map-get($ubicacion_flex, text-align);
+				margin: 20px;
+			}
+			.articleAnalisis {
+				@extend %flex;
+				flex-direction: map-get($ubicacion_flex, flex-direction);
+				justify-content: space-around;
+				background-color: nociones.$color_1;
+				height: auto;
+				margin: 0px auto;
+				border: 1px solid black;
+				@media (min-width: 768px) {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+				}
+				p {
+					padding: 20px;
+				}
+				.imgCompositores {
+					margin: auto;
+					.retrato { display: flex;
+					width: auto;
+					height: 300px;
+				}
+				}
+			}
+			.containerCompositor {
+				h2 {
+					text-align: map-get($ubicacion_flex, text-align);
+					margin: 20px;
+				}
+				.compositor {
+					@extend %flex;
+					justify-content: map-get($ubicacion_flex, justify-content);
+					margin: auto;
+					border: 1px solid black;
+					flex-direction: map-get($ubicacion_flex, flex-direction);
+					background-color: nociones.$color_1;
+					@media (min-width: 1280px) {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-row: 1fr 1fr;
+						justify-content: center;
+						text-align: center;
+						align-items: center;
+					}
+					p{
+						padding: 20px;
+					}
+					.table {
+						margin: 20px;
+					}
+					.videoObra {
+						padding: 20px;
+						margin-left: 10px;
+						width: auto;
+						height: 500px;
+						@media (min-width: 0px){
+							width: 90%;
+						}
+						@media (min-width: 563px){
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
