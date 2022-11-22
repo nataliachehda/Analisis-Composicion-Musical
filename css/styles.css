@@ -13,8 +13,24 @@ body header .navFondo {
   background-image: url(../images/fondomusica.jpg);
   background-size: cover;
 }
+@media (max-width: 992px) {
+  body header .navFondo {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+}
+body header .navFondo .container-fluid .navbar-brand {
+  margin: 0px;
+  padding: 0px;
+}
 body header .navFondo .container-fluid .navbar-brand img {
   border-radius: 50px;
+}
+body header .navFondo .container-fluid .navbar-toggler {
+  background-color: rgb(245, 225, 161);
+}
+body header .navFondo .container-fluid span.navbar-toggler-icon {
+  background-color: rgb(245, 225, 161);
 }
 body header .navFondo .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: black;
@@ -92,6 +108,7 @@ body footer .footerProfe2 .logoNa {
 body footer .footerProfe2 h5 {
   color: antiquewhite;
   padding-top: 10px;
+  padding-left: 10px;
 }
 @media (max-width: 340px) {
   body footer .footerProfe2 h5 {
@@ -108,6 +125,22 @@ body header section .pageDescription {
     margin-right: 50px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+@media (min-width: 400px) {
+  body header section .pageDescription {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  body header section .pageDescription {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 body .mainIndex section .cardsCompositor {
@@ -136,6 +169,11 @@ body .mainIndex section .cardsCompositor .tarjetasCompositores {
 }
 body .mainIndex section .cardsCompositor .tarjetasCompositores:hover .contenidoTarjetas {
   transform: rotateY(0.5turn);
+}
+@media (max-width: 768px) {
+  body .mainIndex section .cardsCompositor .tarjetasCompositores {
+    width: 18rem;
+  }
 }
 body .mainIndex section .cardsCompositor .tarjetasCompositores .contenidoTarjetas {
   text-align: center;
@@ -324,7 +362,7 @@ body .mainCompositor .sectionCompositor .containerCompositor .compositor p {
   padding: 20px;
 }
 body .mainCompositor .sectionCompositor .containerCompositor .compositor .table {
-  margin: auto;
+  margin: 15px;
 }
 body .mainCompositor .sectionCompositor .containerCompositor .compositor .videoObra {
   padding: 20px;
@@ -369,6 +407,9 @@ body .mainCompositor .sectionCompositor .containerCompositor .compositor .videoO
     padding: 40px;
   }
 }
+.mainContacto .contactoContainer div {
+  margin: auto;
+}
 .mainContacto .contactoContainer div img {
   display: flex;
   width: 300px;
@@ -383,6 +424,11 @@ body .mainCompositor .sectionCompositor .containerCompositor .compositor .videoO
 @media (max-width: 1280px) {
   .mainContacto .contactoContainer div img {
     margin-top: 50px;
+  }
+}
+@media (max-width: 354px) {
+  .mainContacto .contactoContainer div img {
+    margin: auto;
   }
 }
 .mainContacto .contactoContainer .profeParrafo1 {

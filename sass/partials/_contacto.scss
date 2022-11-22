@@ -28,6 +28,7 @@ $paddings: 60px;
 			padding: 40px;
 		}
 		div { 
+			margin: auto;
 			img {
 				display: flex;
 				@include nociones.tamano (300px, 400px);
@@ -40,6 +41,9 @@ $paddings: 60px;
 				@media (max-width: 1280px) {
 					margin-top: 50px;
 				}	
+				@media (max-width: 354px) {
+					margin: auto;
+				}
 			}
 		}
 		.profeParrafo1{
