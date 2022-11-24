@@ -71,17 +71,25 @@ body {
 			p {
 				padding: $padding;
 			}
+			a { 
+				text-decoration: none;
+				color: rgb(152, 238, 231);
+			}
 		}
 		.articleContainer2 {
 			color: $color_2;
 			@media (min-width: 768px) {
 				margin: 50px;
 				}
+			h3 {
+				padding: $padding;
+			}
 			p {
 				padding: $padding;
 			}
-			h3 {
-				padding: $padding;
+			a { 
+				text-decoration: none;
+				color: $color_2;
 			}
 		}
 	}

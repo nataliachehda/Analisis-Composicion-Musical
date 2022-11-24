@@ -10,10 +10,16 @@ body {
 		background: #F3904F;
 		background: -webkit-linear-gradient(to bottom, #3B4371, #F3904F);
 		background: linear-gradient(to bottom, #3B4371, #F3904F);
+		@media (min-width: 768px) {
+		font-size: 18px;
+		}
 		header{
 		.navFondo {
 			background-image: url(../images/fondomusica.jpg);
 			background-size: cover;
+			a:hover { 
+				color: rgb(185, 186, 163) !important; 
+			}
 			@media (max-width: 992px) {
 				display: grid;
 				grid-template-columns: 4fr 1fr;
